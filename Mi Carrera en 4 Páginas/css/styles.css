@@ -1,0 +1,361 @@
+/* =============================
+   Reset y estilos generales
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #294549;  /* verde petróleo oscuro para texto */
+  height: 100%;
+  background: #9DC1BD; /* verde agua suave para fondo general */
+}
+
+/* =============================
+   Encabezado
+============================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #086784;   /* azul profundo */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* =============================
+   Navegación
+============================= */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #DEAB68;  /* dorado cálido */
+}
+
+.nav-pill {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #01868C; /* turquesa intenso */
+  transition: background 0.3s;
+}
+
+.nav-pill:hover {
+  background: #DEAB68; /* dorado cálido */
+  color: #294549;
+}
+
+/* =============================
+   Hero
+============================= */
+.hero {
+  padding: 40px 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-photo img {
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff;
+  border: 3px solid #DEAB68;  /* marco dorado */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.hero-text p{
+  text-align: justify;
+  padding: 20px;
+  margin: 20px auto;
+  line-height: 1.6;
+  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #294549;
+}
+
+/* =============================
+   Botones sociales
+============================= */
+.social {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-btn {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-btn img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.social-btn img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #DEAB68);
+}
+
+/* =============================
+   Formulario de contacto
+============================= */
+.contacto {
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #294549;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-primario {
+  background: #086784;  /* azul profundo */
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.btn-primario:hover {
+  background: #01868C;  /* turquesa intenso */
+}
+
+/* =============================
+   Footer
+============================= */
+.site-footer {
+  text-align: center;
+  padding: 80px;
+  background: #086784;  /* azul profundo */
+  color: #fff;
+  margin-top: 120px;
+}
+
+/* =============================
+   Fondo de pantalla
+============================= */
+.background {
+  background:#9DC1BD;
+  background-size: cover;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* =============================
+   Botones principales
+============================= */
+.grid-buttons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+  margin:32px 0;
+}
+
+.btn-option{
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 500px;
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  border: 0;
+  border-radius: 40px;
+  background: #086784;       /* azul profundo */
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0,0,0,.18);
+  transition: transform .15s ease, filter .2s ease, background .3s ease;
+}
+
+.btn-opcion:hover,
+.btn-hab:hover,
+.btn-logro:hover,
+.btn-gusto:hover{
+  transform: translateY(-2px) scale(1.02);
+  filter: brightness(1.05);
+  background: #01868C; /* turquesa intenso al hover */
+}
+
+/* Responsivo */
+@media (max-width: 600px){
+  .btn-opcion,
+  .btn-hab,
+  .btn-logro,
+  .btn-gusto{
+    width: 92%;
+    min-width: auto;
+  }
+}
+
+/* =============================
+   Modal
+============================= */
+.modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+}
+
+.modal.open{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  border: 0;
+}
+
+.modal-dialog{
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  margin: 0 16px;
+  background: rgba(255,255,255,.92);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  text-align: left;
+}
+
+/* =============================
+   Icono Home
+============================= */
+.icon-home {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+/* =============================
+   Responsividad para móviles
+============================= */
+@media (max-width: 768px) {
+  /* Header */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  /* Hero: foto y texto en columna */
+  .hero-grid {
+    grid-template-columns: 1fr;  /* una sola columna */
+    text-align: center;
+  }
+
+  .hero-photo {
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    max-width: 100%;  /* ocupa todo el ancho disponible */
+  }
+
+  /* Botones principales */
+  .btn-option,
+  .btn-hab,
+  .btn-logro,
+  .btn-gusto {
+    width: 100%;       /* ocupa todo el ancho */
+    min-width: auto;   /* elimina la restricción de 500px */
+  }
+
+  /* Formulario */
+  .form-grid {
+    grid-template-columns: 1fr; /* una columna */
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .social-btn img {
+    width: 40px;
+    height: 40px;
+  }
+}

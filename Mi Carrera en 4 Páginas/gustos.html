@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+
+  <title>Gustos Personales</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /></a>
+    <h1 class="site-title">Gustos Personales</h1>
+  </div>
+  <nav class="crumbs" aria-label="Árbol de navegación">
+    <li><a href="index.html"><img src="images/home4.png" alt="Inicio" class="icon-home"> </a></li> › <span>Gustos</span>
+  </nav>
+</header>
+
+<main class="container narrow">
+  <div class="grid-buttons">
+    <button class="btn-option" data-gusto="g1">Lectura</button>
+    <button class="btn-option" data-gusto="g3">Pintura</button>
+    <button class="btn-option" data-gusto="g4">Juegos de Rol</button>
+  </div>
+
+  <!-- Popups -->
+  <div class="modal" id="modal">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h3 id="modal-title">Detalle del gusto</h3>
+      <p id="modal-body">...</p>
+      <button class="btn-secundario" id="modal-close">Cerrar</button>
+    </div>
+    <button class="modal-backdrop" id="modal-backdrop" aria-label="Cerrar modal"></button>
+  </div>
+
+ 
+</main>
+
+<footer class="site-footer">
+  <small>&copy; <span id="year"></span> Daniela Escobar.</small>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

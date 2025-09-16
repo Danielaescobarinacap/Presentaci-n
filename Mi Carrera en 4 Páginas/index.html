@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+
+  <title>Daniela Escobar - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="images/logo.png" alt="Logo de Daniela Escobar" class="logo" />
+    <h1 class="site-title">Daniela Escobar Gallardo</h1>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+    <ul>
+      <li><a class="nav-pill" href="habilidades.html">Habilidades</a></li>
+      <li><a class="nav-pill" href="logros.html">Logros</a></li>
+      <li><a class="nav-pill" href="gustos.html">Gustos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-grid">
+      <figure class="hero-photo">
+        <img src="images/perfil2.png" alt="Fotografía de Daniela Escobar" />
+      </figure>
+      <div class="hero-text">
+        <p class="justificado">
+          Hola, soy Daniela Naiomi Escobar Gallardo, Analista Programador titulada y estudiante de Ingeniería en Informática en INACAP.
+La tecnología siempre ha sido mi motor, porque creo que puede cambiar realidades y abrir nuevas oportunidades para las personas y las organizaciones.
+
+<br>He participado en proyectos académicos, talleres y seminarios que me han permitido crecer  y  descubrir lo mucho que disfruto aprender y aplicar lo que sé. También he tenido experiencias en roles comunitarios y profesionales, donde confirmé que la colaboración, la empatía y la organización son claves para lograr grandes cosas en equipo.
+
+<br>Me describo como alguien curiosa, perseverante y proactiva, con ganas de seguir creciendo en áreas como el desarrollo full stack, la analítica de datos y la gestión de proyectos TI. <br>Mi meta es aportar con soluciones innovadoras y con impacto positivo, siempre buscando dejar huella en lo que hago.
+
+<br>Si compartes intereses en tecnología, innovación o proyectos con impacto, ¡me encantaría conectar contigo!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="social">
+    <h2 class="visually-hidden">Redes sociales</h2>
+  
+    <a class="social-btn" href="https://www.linkedin.com/in/daniela-naiomi-escobar-gallardo-8631b814a/" target="_blank" rel="noopener">
+    <img src="images/linkedin.png" alt="LinkedIn">
+    </a>
+  
+    <a class="social-btn" href="https://github.com/Danielaescobarinacap" target="_blank" rel="noopener">
+    <img src="images/github-icon-2.svg" alt="GitHub">
+    </a>
+  </section>
+
+  <section class="contacto">
+    <h2>Contáctame</h2>
+    <!-- ✅ Cambiado con action y method -->
+    <form id="contact-form" class="card" action="php/enviar.php" method="POST">
+      <div class="form-grid">
+        <label>Nombre
+          <input type="text" name="nombre" required />
+        </label>
+        <label>Teléfono
+          <input type="tel" name="telefono" required />
+        </label>
+        <label>Correo electrónico
+          <input type="email" name="correo" required />
+        </label>
+      </div>
+      <button type="submit" class="btn-primario">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>&copy; <span id="year"></span> Daniela Escobar. Todos los derechos reservados.</small>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
